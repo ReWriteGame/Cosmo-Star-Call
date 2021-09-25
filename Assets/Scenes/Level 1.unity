@@ -7894,6 +7894,11 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!82 &1316250788 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 5974286900657128921, guid: 590e1bef278bd9d43852f15afda525b5, type: 3}
+  m_PrefabInstance: {fileID: 1365438813}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1332894232
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9135,6 +9140,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   directionThrow: {fileID: 2080400615}
+  laserShotEnent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1316250788}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   currentBullet: {fileID: 0}
 --- !u!61 &1635116850
 BoxCollider2D:
