@@ -46,5 +46,5 @@ MonoBehaviour:
   spawnerData: {fileID: 11400000, guid: fa83a97036a1a5b46b6f9e4aa4c4f0df, type: 2}
   spawnPosition: {fileID: 1920036469821478172}
   playOnAwake: 1
-  numberOfSpawns: {x: 0, y: 0}
-  "delay\u0412etweenSpawns": {x: 0, y: 0}
+  numberOfSpawns: {x: 10000, y: 10000}
+  "delay\u0412etweenSpawns": {x: 2, y: 5}

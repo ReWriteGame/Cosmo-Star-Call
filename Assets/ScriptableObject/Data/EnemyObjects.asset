@@ -10,7 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c04213d3b27bded469e43bbcce764d36, type: 3}
-  m_Name: DataSpawner
+  m_Name: EnemyObjects
   m_EditorClassIdentifier: 
   prefabs:
+  - {fileID: 8662776920907998692, guid: 210bc8c2a3a3b9e40829768f35fe4301, type: 3}
+  - {fileID: 9163338346772477896, guid: c5921cf1f4ee488488c8c1bb7c072270, type: 3}
   - {fileID: 7934071020847353355, guid: ff58fc0fb2b44de4db82d8733cd43a70, type: 3}

@@ -1,18 +1,27 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Asteroid : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public UnityEvent getBulletEvent;
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        
-    }
+        if (collision.gameObject.GetComponent<Destroyer>())
+        {
+            gameObject.GetComponent<Destroyable>().destroy();
+        }
 
-    // Update is called once per frame
-    void Update()
+        if(collision.gameObject.GetComponent<Bullet>())
+            getBulletEvent?.Invoke();
+
+    }
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        
+        if (collision.gameObject.GetComponent<Destroyer>())
+        {
+            gameObject.GetComponent<Destroyable>().destroy();
+        }
     }
 }

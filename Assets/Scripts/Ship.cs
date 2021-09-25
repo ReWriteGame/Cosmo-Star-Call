@@ -4,15 +4,14 @@ using UnityEngine;
 
 public class Ship : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        
+        if (collision.gameObject.GetComponent<Asteroid>())
+            gameObject.GetComponent<Destroyable>().destroy();
     }
-
-    // Update is called once per frame
-    void Update()
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        
+        if (collision.gameObject.GetComponent<Asteroid>())
+            gameObject.GetComponent<Destroyable>().destroy();
     }
 }
